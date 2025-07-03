@@ -1,0 +1,10 @@
+setup.py
+magi_cli/__init__.py
+magi_cli/main.py
+magi_cli.egg-info/PKG-INFO
+magi_cli.egg-info/SOURCES.txt
+magi_cli.egg-info/dependency_links.txt
+magi_cli.egg-info/entry_points.txt
+magi_cli.egg-info/requires.txt
+magi_cli.egg-info/top_level.txt
+magi_cli/commands/__init__.py

@@ -1,0 +1,33 @@
+{
+  "name": "magi-system",
+  "version": "1.0.0",
+  "description": "> エヴァンゲリオンのMAGIシステムにインスパイアされた、3つのAIエージェントによるリアルタイム合議制意思決定支援システム",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && source venv/bin/activate && uvicorn app.main:app --reload",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "setup:backend": "cd backend && python -m venv venv && source venv/bin/activate && pip install -r requirements.txt",
+    "setup:frontend": "cd frontend && npm install",
+    "setup:cli": "cd cli && python -m venv cli-venv && source cli-venv/bin/activate && pip install -e .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clionegohan/Magi-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Clionegohan/Magi-System/issues"
+  },
+  "homepage": "https://github.com/Clionegohan/Magi-System#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}

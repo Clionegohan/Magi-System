@@ -20,7 +20,7 @@ yarn-error.log*
 
 # Environment variables
 .env
-.env.locahttp://localhost:
+.env.local
 .env.development.local
 .env.test.local
 .env.production.local

@@ -12,7 +12,7 @@ export const EVA_LAYOUT = {
 export const EVA_TYPOGRAPHY = {
     fonts: {
         mono: '"Courier New", Monaco, "Consolas", monospace',
-        system: 'Arial, "Helvetica Neve", sans-serif'
+        system: 'Arial, "Helvetica Neue", sans-serif'
     },
 
     fontSize: {

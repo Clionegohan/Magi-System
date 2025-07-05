@@ -20,3 +20,14 @@ export const EVA_TYPOGRAPHY = {
         normal: '16px'
     }
 } as const;
+
+export const EVA_STYLES = {
+    timeDisplay: {
+        fontFamily: EVA_TYPOGRAPHY.fonts.mono,
+        fontSize: EVA_TYPOGRAPHY.fontSize.display,
+        color: '#ffffff',
+        textAlign: 'center' as const,
+        letterSpacing: '0.1em',
+        textShadow: '0 0 10px rgba(255, 255, 255, 0.5)'
+    }
+} as const;

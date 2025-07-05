@@ -1,4 +1,12 @@
-// テーマ定数(カラーを除く)
+// EVAテーマ定数
+
+// カラーパレット
+export const EVA_COLORS = {
+    red: '#FF0000',
+    yellow: '#FFFF00', 
+    white: '#FFFFFF',
+    black: '#000000'
+} as const;
 
 // 固定解像度
 export const EVA_LAYOUT = {

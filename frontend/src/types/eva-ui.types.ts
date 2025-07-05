@@ -8,3 +8,5 @@ export interface BaseEvaProps {
     className?: string;
     children?: ReactNode;
 }
+
+export type TimeDisplayProps = BaseEvaProps;

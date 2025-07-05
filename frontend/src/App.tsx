@@ -1,10 +1,10 @@
 import { EvaContainer } from "./components/layout/EvaContainer";
-import { MainNavigator } from "./navigation/MainNavigator";
+import { TimeDisplay } from "./components/displays/TimeDisplay";
 
 export default function App() {
   return (
     <EvaContainer>
-      <MainNavigator />
+      <TimeDisplay />
     </EvaContainer>
   );
 }

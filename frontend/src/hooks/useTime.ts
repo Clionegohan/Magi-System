@@ -6,7 +6,7 @@ interface UseTimeReturn {
     formattedTime: string;
 }
 
-const useTime = (): UseTimeReturn => {
+const useTime = (locale: string = 'ja-JP', timeZone: string = 'Asia/Tokyo'): UseTimeReturn => {
     const [currentTime, setCurrentTime] = useState(new Date());
 
     useEffect(() => {
@@ -17,12 +17,12 @@ const useTime = (): UseTimeReturn => {
         return () => clearInterval(timer);
     }, []);
 
-    const formattedTime = currentTime.toLocaleTimeString('ja-JP', {
+    const formattedTime = currentTime.toLocaleTimeString(locale, {
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
         hour12: false,
-        timeZone: 'Asia/Tokyo'
+        timeZone: timeZone,
     });
 
     return { currentTime, formattedTime };

@@ -49,7 +49,7 @@ export const EvaAngleFrame: React.FC<EvaAngleFrameProps> = ({
         width: width,
         height: height,
         border: `${borderWidth}px solid ${colorValue}`,
-        borderRadius: '0px',
+        borderRadius: 0,
         clipPath: getClipPath(),
         background: 'rgba(0, 0, 0, 0.4)',
         boxShadow: `0 0 10px ${colorValue}40`,

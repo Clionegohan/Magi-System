@@ -165,7 +165,7 @@ export const EvaCornerCut: React.FC<EvaCornerCutProps> = ({
         className={`eva-corner-cut eva-corner-cut--${corner} ${className}`}
         style={getCornerStyles()}
       />
-      {decorative && decorativeLines && decorativeLines.map((lineStyle, index) => (
+      {decorative && decorativeLines?.map((lineStyle, index) => (
         <div
           key={`decorative-${corner}-${index}`}
           style={lineStyle}

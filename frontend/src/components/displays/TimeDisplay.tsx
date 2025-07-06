@@ -5,6 +5,14 @@ import { EvaDigitalDisplay } from '../atoms/EvaDigitalDisplay';
 import { EvaLabelBox } from '../atoms/EvaLabelBox';
 import { EvaAngleFrame } from '../atoms/EvaAngleFrame';
 
+const FLAME_CONFIG = {
+    cutDirection: 'all' as const,
+    cutSize: 20,
+    color: 'yellow' as const,
+    width: '300px',
+    height: '120px',
+} as const;
+
 export const TimeDisplay: React.FC<TimeDisplayProps> = ({ 
     className = ''
 }) => {
@@ -13,11 +21,11 @@ export const TimeDisplay: React.FC<TimeDisplayProps> = ({
     return (
         <div className={`eva-time-display-container ${className}`} style={{ position: 'relative' }}>
             <EvaAngleFrame 
-                cutDirection="all" 
-                cutSize={20} 
-                color="yellow" 
-                width="300px" 
-                height="120px"
+                cutDirection = {FLAME_CONFIG.cutDirection}
+                cutSize = {FLAME_CONFIG.cutSize}
+                color = {FLAME_CONFIG.color}
+                width = {FLAME_CONFIG.width}
+                height = {FLAME_CONFIG.height}
             >
                 <div style={{ textAlign: 'center' }}>
                     <EvaLabelBox 
